@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
+    <div class="center">
+      <div class="js-clock">
+        <h1 class="clock sans-serif">00:00</h1>
+      </div>
+      <form class="js-greetingForm form">
+        <input type="text" placeholder="write your name here" />
+      </form>
+      <h4 class="js-greetings greetings">
+        <span class="js-hello"></span>
+        <span class="js-name"></span>
+      </h4>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Something to do" />
+      </form>
     </div>
-    <form class="js-greetingForm form">
-      <input type="text" placeholder="write your name here" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
+    <div class="center-below">
+      <ul class="js-toDoList"></ul>
+    </div>
     <span class="js-weather"></span>
     <script src="assets/js/background.js"></script>
     <script src="assets/js/clock.js"></script>
