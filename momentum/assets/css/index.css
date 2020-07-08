@@ -45,6 +45,18 @@ input[type="text"] {
 .js-toDoList {
   margin-left: 10%;
   font-size: 1.3em;
+  height: 200px;
+  list-style-type: none;
+  overflow: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.delBtn {
+  margin-right: 7px;
 }
 
 .js-greetings {

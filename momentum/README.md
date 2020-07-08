@@ -1,13 +1,82 @@
-## 더 고칠 부분
-
-- 리스트를 많이 생성했을때 화면 범위를 넘어가버리는거
-- 리스트의 삭제 버튼 위치 정렬
-- 12시간 기준으로 보여주기 on/off
+# [ Javascipts ]
 
 
 
-## 더 하게 된다면
+## 1. background.js
 
-- 배포? 크롬 확장프로그램으로 사용
-- 시작, 끝 버튼 => 시간 저장 등
-  - 스탑워치? 일시정지
+**background image 가져오기**
+
+- 미리 image 이름을 1부터 자연수로 지정
+- Math.floor(Math.random() * IMAGE_NUMBER)
+
+
+
+**background image 넣기**
+
+- Image 객체 생성
+- 속성 추가 (src, class)
+- body.appendChild(image)
+
+
+
+**[css] .bgImage**
+
+- position: absolute; 
+- z-index: -1;
+- animation 등
+
+
+
+
+
+## 2. clock.js
+
+**getTime**
+
+- Date 객체
+- setInterval(getTime, 1000)
+
+
+
+
+
+## 3. greeting.js
+
+**localStorage, classList, preventDefault**
+
+
+
+
+
+## 4. todo.js
+
+**createElement("li"), appendChild**
+
+
+
+
+
+## 5. weather.js
+
+**getweather**
+
+- fetch
+  - https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric
+  - then, json
+
+
+
+**askForCoords**
+
+- navigator.geolocation.getCurrentPosition
+
+
+
+
+
+
+
+## [ TO DO MORE ]
+
+- 크롬 확장프로그램으로 사용하는 방법
+- TODO 목록에 시간 추가
